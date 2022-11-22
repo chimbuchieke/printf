@@ -245,3 +245,4 @@ int write_pointer(char buffer[], int ind, int length,
 				write(1, &buffer[ind], length - (1 - padd_start) - 2));
 		}
 	}
+}
