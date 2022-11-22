@@ -245,4 +245,9 @@ int write_pointer(char buffer[], int ind, int length,
 				write(1, &buffer[ind], length - (1 - padd_start) - 2));
 		}
 	}
+buffer[--ind] = 'x';
+	buffer[--ind] = '0';
+	if (extra_c)
+		buffer[--ind] = extra_c;
+	return (write(1, &buffer[ind], BUFF_SIZE - ind - 1));
 }
