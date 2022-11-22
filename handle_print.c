@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * handle_print - Prints an argument based on its type
  * @fmt: Formatted string in which to print the arguments
@@ -41,6 +40,7 @@ int handle_print(const char *fmt, int *ind, va_list list, char buffer[],
 			if (fmt[*ind] == ' ')
 				--(*ind);
 			return (1);
+		}
 			unknow_len += write(1, &fmt[*ind], 1);
 			return (unknow_len);
 		}
